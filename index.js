@@ -1,6 +1,8 @@
+import 'dotenv/config'
 import express from "express";
+    
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
@@ -66,6 +68,17 @@ app.get("/", (req, res) => {
   res.send("Hello, World!");
 });
 
+/* using port just like that is not recommended in production it wont work when you are trying to deploy your app
+For that you can use npm install dotenv --save
+and then create a .env file in the root directory of your project and add PORT=3000
+Then you can use process.env.PORT in your code
+or
+require('dotenv').config()
+console.log(process.env) // remove this after you've confirmed it is working
+
+
+/*
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}...`);
 });
+*/
