@@ -1,5 +1,5 @@
 {
-  "name": "manager",
+  "name": "vidtube",
   "version": "1.0.0",
   "description": "A simple manager for stuff",
   "main": "index.js",
@@ -20,5 +20,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasadbhalerao1/express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/prasadbhalerao1/express/issues"
+  },
+  "homepage": "https://github.com/prasadbhalerao1/express#readme"
 }
